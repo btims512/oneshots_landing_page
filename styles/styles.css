@@ -16,3 +16,12 @@ colors {
     opacBlack90: 
 
 }
+
+theme {
+    
+    background: colors.black;
+    background2: colors.opacBlack90;
+    foreground: colors.white;
+    accent: colors.pink;
+    
+}

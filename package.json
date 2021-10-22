@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/btims512/oneshots_landing_page/issues"
   },
-  "homepage": "https://github.com/btims512/oneshots_landing_page#readme"
+  "homepage": "https://github.com/btims512/oneshots_landing_page#readme",
+  "dependencies": {
+    "mdb-ui-kit": "^3.9.0"
+  }
 }

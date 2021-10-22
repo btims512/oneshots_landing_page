@@ -1,27 +1,50 @@
-colors {
-
-    black: #252E39;
-    white: #F3F3F3;
-    gray0: #2D3846;
-    gray20: #354252;
-    gray40: #6E7782;
-    gray60: #8E959E;
-    red: #FF6060;
-    yellow: #FFF50D;
-    green: #24FF00;
-    blue: #4EB5FF;
-    teal: #41E9D3;
-    pink: #FF0DDC;
-    vantablack: #151A21;
-    opacBlack90: 
-
+body {
+  background-image: url("../assets/oneshots_banner.png");
+  background-repeat: repeat-x;
+  height: 360px;
+  width: 100%;
+  border-radius: 0px;
+  background-color: #252e39;
 }
 
-theme {
-    
-    background: colors.black;
-    background2: colors.opacBlack90;
-    foreground: colors.white;
-    accent: colors.pink;
-    
+.logo {
+  height: 44px;
+  width: 183px;
+  left: 48px;
+  top: 22px;
+  border-radius: 0px;
+}
+
+.form-inline,
+.btn {
+  background-color: #ff0ddc;
+  color: #f3f3f3;
+  height: 45px;
+  left: 1339px;
+  top: 21px;
+  border-radius: 4px;
+  padding: 9px, 16px, 9px, 16px;
+}
+
+.footer {
+  background-image: url(/assets/Rectangle\ 2-2.png);
+  background-size: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 148px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#icon_styles {
+}
+
+.me-4 {
+  border: 1px solid #f3f3f3;
+
+  padding: 5px;
+  border-radius: 90%;
 }

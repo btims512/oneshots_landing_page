@@ -1,0 +1,23 @@
+colors {
+  black: #252e39;
+  white: #f3f3f3;
+  gray0: #2d3846;
+  gray20: #354252;
+  gray40: #6e7782;
+  gray60: #8e959e;
+  red: #ff6060;
+  yellow: #fff50d;
+  green: #24ff00;
+  blue: #4eb5ff;
+  teal: #41e9d3;
+  pink: #ff0ddc;
+  vantablack: #151a21;
+  opacblack90: ;
+}
+
+theme {
+  background: colors.black;
+  background2: colors.opacBlack90;
+  foreground: colors.white;
+  accent: colors.pink;
+}

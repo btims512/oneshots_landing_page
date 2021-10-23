@@ -7,11 +7,24 @@ body {
   background-color: #252e39;
 }
 
+svg {
+  width: 462;
+  height: 111;
+}
+
+.navbar {
+  padding-right: 48px;
+  height: 88px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+}
+
 .logo {
   height: 44px;
   width: 183px;
-  left: 48px;
   top: 22px;
+  padding-left: 48px;
   border-radius: 0px;
 }
 
@@ -19,11 +32,15 @@ body {
 .btn {
   background-color: #ff0ddc;
   color: #f3f3f3;
+  font-family: "Inter", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
   height: 45px;
-  left: 1339px;
+  width: 77px;
+  left: 899px;
   top: 21px;
+  padding-right: 48px;
   border-radius: 4px;
-  padding: 9px, 16px, 9px, 16px;
 }
 
 .footer {
@@ -40,11 +57,4 @@ body {
 }
 
 #icon_styles {
-}
-
-.me-4 {
-  border: 1px solid #f3f3f3;
-
-  padding: 5px;
-  border-radius: 90%;
 }

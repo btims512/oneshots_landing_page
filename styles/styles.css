@@ -8,8 +8,8 @@ body {
 }
 
 svg {
-  width: 462;
-  height: 111;
+  /* width: 462;
+  height: 111; */
 }
 
 .navbar {
@@ -29,7 +29,7 @@ svg {
 }
 
 .form-inline,
-.btn {
+.nav-button {
   background-color: #ff0ddc;
   color: #f3f3f3;
   font-family: "Inter", sans-serif;
@@ -39,21 +39,140 @@ svg {
   width: 77px;
   left: 899px;
   top: 21px;
-  padding-right: 48px;
   border-radius: 4px;
+}
+
+.body_button {
+  border: 1px solid #f3f3f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  height: 45px;
+  color: #f3f3f3;
+  width: 77px;
+  left: 899px;
+  top: 21px;
+  border-radius: 4px;
+}
+
+#container {
+  display: flex;
+  flex-flow: column wrap;
+  height: 250px;
+}
+
+.left_side {
+  display: flex;
+  flex-flow: column wrap;
+  justify-items: center;
+  align-content: flex-end;
+  height: 100%;
+  margin-top: 30px;
+}
+
+.right_side {
+  /* background-color: red; */
+  display: flex;
+  flex-flow: column wrap;
+  justify-items: center;
+  align-content: center;
+  height: 800px;
+  margin-top: 30px;
+}
+
+.right_content {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  margin-top: 15px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  width: 416px;
+  height: 404px;
+  left: 205px;
+  top: 124px;
+}
+
+h2 {
+  height: 55px;
+  width: 457px;
+  left: 736px;
+  top: 136px;
+  font-family: Titillium Web;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #f3f3f3;
+}
+
+h4 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #41e9d3;
+  height: 40px;
+  width: 428px;
+  left: 736px;
+  top: 207px;
+}
+
+h5 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #41e9d3;
+  height: 40px;
+  width: 428px;
+  left: 736px;
+}
+
+h6 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f3f3f3;
+}
+
+.app {
+  /* position: absolute; */
+  width: 416px;
+  height: 404px;
+  left: 205px;
+  top: 124px;
 }
 
 .footer {
   background-image: url(/assets/oneshots-footer-banner.png);
   background-size: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   position: absolute;
   left: 0;
   bottom: 0;
   height: 148px;
   width: 100%;
   overflow: hidden;
+}
+
+a,
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  height: 250px;
 }
 
 #icon_styles {

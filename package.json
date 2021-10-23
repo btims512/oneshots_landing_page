@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/btims512/oneshots_landing_page#readme",
   "dependencies": {
-    "mdb-ui-kit": "^3.9.0"
+    "mdb-ui-kit": "^3.9.0",
+    "normalize.css": "^8.0.1"
   }
 }

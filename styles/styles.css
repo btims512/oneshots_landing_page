@@ -1,4 +1,4 @@
-/* @media screen and (max-width: 600px) {
+/* @media screen and (min-width: 600px) {
 
   .navbar {
 height: 88px;
@@ -29,9 +29,16 @@ body {
 }
 
 .navbar {
+  background: #151a21cc;
   display: flex;
   flex-flow: row wrap;
-  object-fit: cover;
+  height: 88px;
+  top: 0;
+  overflow: hidden;
+  background-size: cover;
+  display: flex;
+  position: fixed;
+  width: 100%;
 }
 
 .logo {
@@ -87,7 +94,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   height: 100vh;
-  width: 100%;
+  min-height: 100vh;
 }
 
 .left_side {
@@ -191,16 +198,13 @@ h6 {
 
 .footer {
   background-image: url(../assets/oneshots-footer-banner.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-size: cover;
-  background-position: center;
-  /* object-fit: contain; */
   display: flex;
   justify-content: space-around;
-  position: absolute;
-  left: 0;
+  position: fixed;
   bottom: 0;
-  height: 224px;
+  height: 148px;
   width: 100%;
   overflow: hidden;
 }

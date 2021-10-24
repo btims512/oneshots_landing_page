@@ -1,15 +1,31 @@
-body {
-  background-image: url("../assets/oneshots_banner.png");
-  background-repeat: repeat-x;
-  height: 360px;
-  width: 100%;
-  border-radius: 0px;
-  background-color: #252e39;
+/* @media screen and (max-width: 600px) {
+
+  .navbar {
+height: 88px;
+width: 872px;
+left: 0px;
+top: 0px;
+border-radius: 0px;
 }
 
-svg {
-  /* width: 462;
-  height: 111; */
+
+  .footer {
+  height: 191px;
+width: 100vw;
+left: 0px;
+top: 191vh;
+bottom: 0;
+  } */
+
+    body {
+      background-image: url("../assets/oneshots_banner.png");
+      background-repeat: repeat-x;
+      height: 360px;
+      /* width: 100%; */
+      background-color: #252e39;
+    }
+
+.hero-container {
 }
 
 .navbar {
@@ -23,12 +39,12 @@ svg {
 .logo {
   height: 44px;
   width: 183px;
-  top: 22px;
-  padding-left: 48px;
+  left: 0px;
+  top: 0px;
   border-radius: 0px;
+  padding-left: 15px;
 }
 
-.form-inline,
 .nav-button {
   background-color: #ff0ddc;
   color: #f3f3f3;
@@ -37,9 +53,14 @@ svg {
   font-weight: bold;
   height: 45px;
   width: 77px;
-  left: 899px;
-  top: 21px;
   border-radius: 4px;
+  font-family: Titillium Web;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 .body_button {
@@ -55,6 +76,13 @@ svg {
   left: 899px;
   top: 21px;
   border-radius: 4px;
+  font-family: Titillium Web;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 #container {
@@ -73,12 +101,11 @@ svg {
 }
 
 .right_side {
-  /* background-color: red; */
-  display: flex;
+  ddisplay: flex;
   flex-flow: column wrap;
   justify-items: center;
-  align-content: center;
-  height: 800px;
+  align-content: flex-end;
+  height: 100%;
   margin-top: 30px;
 }
 
@@ -114,20 +141,20 @@ h2 {
 }
 
 h4 {
+  font-family: "Titillium Web", sans-serif;
+  width: 428px;
+  height: 40px;
+  left: 532px;
+  top: 183px;
   font-family: Inter;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
   color: #41e9d3;
-  height: 40px;
-  width: 428px;
-  left: 736px;
-  top: 207px;
 }
 
 h5 {
-  font-family: Inter;
+  font-family: "Titillium Web", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -138,9 +165,17 @@ h5 {
   left: 736px;
 }
 
+.h6-text {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
 h6 {
-  font-family: Inter;
-  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  font-family: "Titillium Web", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -149,10 +184,10 @@ h6 {
 
 .app {
   /* position: absolute; */
-  width: 416px;
   height: 404px;
-  left: 205px;
-  top: 124px;
+  width: 416px;
+  left: 51px;
+  top: 100px;
 }
 
 .footer {
@@ -192,7 +227,7 @@ h6 {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   ...;
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */

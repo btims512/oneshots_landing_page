@@ -191,8 +191,10 @@ h6 {
 }
 
 .footer {
-  background-image: url(/assets/oneshots-footer-banner.png);
-  background-size: 100%;
+  background-image: url(../assets/oneshots-footer-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   /* object-fit: contain; */
   display: flex;
   justify-content: space-around;

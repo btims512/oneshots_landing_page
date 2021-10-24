@@ -130,7 +130,7 @@ h2 {
   width: 457px;
   left: 736px;
   top: 136px;
-  font-family: Titillium Web;
+  font-family: "Titillium Web", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -201,7 +201,7 @@ h6 {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 148px;
+  height: 224px;
   width: 100%;
   overflow: hidden;
 }

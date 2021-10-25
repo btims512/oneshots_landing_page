@@ -566,6 +566,11 @@ a:hover {
   width: 416px;
   }
 
+  img {
+    width: fit-content;
+    height: fit-content;
+  }
+
   .footer_left {
     display: flex;
     width: 100vw;

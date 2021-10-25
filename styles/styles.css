@@ -181,10 +181,11 @@ a:visited {
 
 a:hover {
   color: white;
+  text-decoration: underline;
 }
 
 .hr {
-      text-decoration:none;
+      text-decoration: none !important;
 }
 
 
@@ -229,7 +230,6 @@ a:hover {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   color: #f3f3f3;
-  text-decoration: underline;
 }
 
 .tc {

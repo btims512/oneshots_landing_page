@@ -192,7 +192,7 @@ a:hover {
 
 .app {
   height: 404px;
-  width: 100%;
+  width: 80%;
   left: 51px;
   top: 100px;
 }
@@ -398,9 +398,6 @@ a:hover {
     padding-left: 30px;
   }
 
-  .app {
-    width: fit-content;
-  }
 
   .left_side {
     display: flex;
@@ -457,9 +454,7 @@ a:hover {
     align-items: flex-end;
   }
 
-  .app {
-    width: fit-content;
-  }
+
 }
 
 /* Portrait */

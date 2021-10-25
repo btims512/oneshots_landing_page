@@ -567,8 +567,7 @@ a:hover {
   }
 
   img {
-    width: fit-content;
-    height: fit-content;
+    width: 390px;
   }
 
   .footer_left {

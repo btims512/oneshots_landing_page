@@ -561,7 +561,7 @@ a:hover {
   }
 
   .app {
-    /* width: fit-content; */
+    max-width: fit-content;
     height: fit-content;
     width: 400px;
   }

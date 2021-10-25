@@ -178,12 +178,8 @@ a:hover {
 }
 
 .hr {
-      text-decoration: none !important;
+  text-decoration: none !important;
 }
-
-
-
-
 
 .link {
   font-family: "Inter", sans-serif;
@@ -200,7 +196,7 @@ a:hover {
   /* margin-left: 200px; */
 }
 
-.footer {
+#footer {
   background-image: url(../assets/oneshots-footer-banner.png);
   background-repeat: repeat-x;
   background-size: cover;
@@ -208,7 +204,7 @@ a:hover {
   justify-content: space-around;
   position: fixed;
   bottom: 0;
-  height: 80px;
+  height: 144px;
   width: 100%;
 }
 
@@ -231,7 +227,7 @@ a:hover {
 .tc {
   display: flex;
   flex-flow: column wrap;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   text-align: right;
@@ -246,6 +242,19 @@ a:hover {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
 @media screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+ 
+  .navbar {
+    background: #151a21cc;
+    display: flex;
+    flex-flow: row wrap;
+    height: 88px;
+    top: 0;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+  }
+
   #container {
     background-image: url("../assets/oneshots_banner.png");
     background-repeat: repeat-x;
@@ -286,7 +295,7 @@ a:hover {
     top: 100px;
   }
 
-  .footer {
+  #footer {
     display: flex;
     flex-direction: row;
     height: 100px;
@@ -294,16 +303,12 @@ a:hover {
   }
 
   .footer_left {
-    display: flex;
-    width: 150px;
-    flex-flow: row wrap;
+    padding-left: 15px;
   }
   .footer_right {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 100px;
-    align-items: flex-end;
+    height: 20vh;
+    align-items: center;
+    
   }
 }
 
@@ -311,23 +316,42 @@ a:hover {
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  .footer {
+  .navbar {
+    background: #151a21cc;
     display: flex;
-    flex-direction: row;
-    height: 100px;
-    width: 375px;
+    flex-flow: row wrap;
+    height: 88px;
+    top: 0;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  #footer {
+    height: 13vh;
+    width: 100vw;
+  }
+
+  .footer_left {
+    display: flex;
+    width: 100vw;
+    padding-left: 5px;
+    flex-flow: row wrap;
+  }
+
+  .footer_right {
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 70px;
+    padding-right: 5px;
+    width: 100vw;
+    align-items: flex-end;
   }
 }
 
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-}
 /* ----------- Google Pixel 2 ----------- */
-@media only screen and (min-width: 411px) and (max-width: 731px) {
+@media only screen and (min-width: 411px) and (max-width: 823px) {
   .right_side {
     display: flex;
     flex-flow: column wrap;
@@ -358,26 +382,48 @@ a:hover {
     height: 148px;
     width: 100%;
   }
+
+  .footer_left {
+    margin-left: 10px;
+  }
+
+  .footer_right {
+    margin-top: -1vh;
+  }
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
 /* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  #footer {
+    height: 13vh;
+    width: 100vw;
+  }
+
+  .footer_left {
+    display: flex;
+    width: 100vw;
+    padding-left: 5px;
+    flex-flow: row wrap;
+  }
+
+  .footer_right {
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 32px;
+    padding-right: 5px;
+    width: 100vw;
+    align-items: flex-end;
+  }
+}
+
+/* Portrait */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
   .footer {
     position: fixed;
     bottom: 0;
     height: 50vh;
-    width: 100%;
-  }
-}
-
-/* Portrait */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  .footer {
-    position: fixed;
-    bottom: 0;
-    height: 100px;
     width: 100%;
   }
 }
@@ -401,11 +447,6 @@ a:hover {
     padding: 20px;
   }
 
-  .footer {
-    height: 148px;
-    width: 100%;
-  }
-
   .right_side {
     display: flex;
     flex-flow: column wrap;
@@ -423,11 +464,19 @@ a:hover {
     margin-bottom: -150px;
   }
 
-  .footer_right {
+  #footer {
+    height: 13vh;
+  }
+
+  .footer_left {
     display: flex;
+    width: 100vw;
+    padding-left: 5px;
     flex-flow: row wrap;
-    width: 100px;
-    align-items: flex-end;
+  }
+
+  .footer_right {
+    padding-bottom: 90px;
   }
 
   .tc {
@@ -441,44 +490,13 @@ a:hover {
   }
 }
 
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-}
-
 /* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  .right_side {
-    display: flex;
-    flex-flow: column wrap;
-    justify-items: center;
-    flex-grow: 1;
-    height: 200px;
-    width: 100vw;
-  }
-  .right_content {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-    align-content: center;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    width: 416px;
-    height: 90vh;
-  }
-  .footer {
-    background-image: url(../assets/oneshots-footer-banner.png);
-    background-repeat: repeat-x;
-    background-size: cover;
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-    overflow: hidden;
-    bottom: 0;
-    height: 90px;
-    width: 100%;
-  }
+  
+
+/* ----------- iPhone 12 Pro Max X ----------- */
+@media only screen and (min-width: 428px) and (max-width: 767px) {
+  /* Your Styles... */
 }
 
 @media (min-width: 961px) {
@@ -495,6 +513,10 @@ a:hover {
     width: 100%;
     overflow: hidden;
   }
+
+  .footer_right {
+  }
+
   .left_side {
     display: flex;
     flex-flow: column wrap;
@@ -505,6 +527,7 @@ a:hover {
     height: max-content;
   }
 }
+
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
   .footer {

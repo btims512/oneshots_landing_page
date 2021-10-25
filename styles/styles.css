@@ -567,7 +567,7 @@ a:hover {
   }
 
   img {
-    width: 390px;
+    max-width: 390px;
   }
 
   .footer_left {

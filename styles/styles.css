@@ -562,6 +562,8 @@ a:hover {
 
   .app {
     width: fit-content;
+    height: fit-content;
+    width: 416px;
   }
 
   .footer_left {

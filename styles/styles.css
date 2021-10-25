@@ -560,14 +560,10 @@ a:hover {
 
   }
 
-  .app {
+  .app, img {
     width: fit-content;
      height: 404px;
   width: 416px;
-  }
-
-  img {
-    max-width: 390px;
   }
 
   .footer_left {

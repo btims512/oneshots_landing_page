@@ -1,5 +1,6 @@
 body {
   position: absolute;
+  overflow-y: auto;
   background-color: #252e39;
 }
 
@@ -68,9 +69,10 @@ body {
   justify-self: center;
   position: fixed;
   margin-top: 88px;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  overflow: scroll;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .left_side {
@@ -255,18 +257,25 @@ a:hover {
     padding: 20px;
   }
 
-  #container {
-    background-image: url("../assets/oneshots_banner.png");
-    background-repeat: repeat-x;
-    display: inline-flex;
-    flex-flow: row wrap;
-    justify-self: center;
-    position: fixed;
-    margin-top: 88px;
-    width: 100vw;
-    height: 100vh;
-    overflow: scroll;
+  .right_side {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: column wrap;
+    width: 100%;
+    flex-grow: 1;
+    height: 110vh;
+    margin-left: -23px;
+    max-width: max-content;
   }
+
+  .right_content {
+    max-width: 100%;
+    /* flex-flow: row wrap; */
+
+
+  }
+
 
   .right_side {
     display: flex;
@@ -277,20 +286,21 @@ a:hover {
     margin-top: 30px;
     padding-left: 30px;
   }
+  
 
   .left_side {
     display: flex;
     flex-flow: column wrap;
+    justify-items: center;
+    align-content: center;
     flex-grow: 1;
-    height: 65vh;
+    width: 100%;
     margin-top: 30px;
-    margin-bottom: -30px;
   }
 
   .app {
-    padding-right: 200px;
     height: 404px;
-    width: 600px;
+    width: 130vw;
     left: 51px;
     top: 100px;
   }
@@ -326,6 +336,31 @@ a:hover {
     position: fixed;
     width: 100%;
     padding: 20px;
+  }
+
+  .left_side {
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-content: center;
+    flex-grow: 1;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .right_side {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    flex-grow: 1;
+    height: 110vh;
+    margin-left: -23px;
+    max-width: max-content;
+  }
+
+  .right_content {
+    max-width: 100%;
+
   }
   
   #footer {
@@ -453,19 +488,34 @@ a:hover {
     justify-items: center;
     flex-grow: 1;
     height: 110vh;
+    margin-left: -23px;
+    width: 100vw;
+  }
+
+  #container {
+    max-width: 100vw;
+  }
+
+  .right_content {
+    height: 100vh;
+    max-width: 100vw;
+    overflow-x: hidden;
   }
 
   .left_side {
     display: flex;
+    justify-content: center;
     flex-flow: column wrap;
     flex-grow: 1;
-    height: 65vh;
-    margin-top: 30px;
-    margin-bottom: -150px;
+    width: 100vw;
   }
 
   #footer {
-    height: 13vh;
+    width: 100%;
+    height: 100px;
+    /* position: absolute; */
+    top: 90vh;
+
   }
 
   .footer_left {
@@ -486,7 +536,7 @@ a:hover {
   }
 
   .app {
-    height: 404px;
+
   }
 }
 
@@ -497,6 +547,9 @@ a:hover {
 /* ----------- iPhone 12 Pro Max X ----------- */
 @media only screen and (min-width: 428px) and (max-width: 767px) {
 
+  #footer {
+
+  }
 
   .footer_left {
     display: flex;

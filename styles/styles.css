@@ -1,9 +1,5 @@
 body {
-  /* background-image: url(../assets/oneshots_banner.png);
-  
-  background-repeat: repeat-x; */
   position: absolute;
-  /* overflow: visible; */
   background-color: #252e39;
 }
 
@@ -100,15 +96,16 @@ body {
   justify-items: center;
   flex-grow: 1;
   height: 90vh;
-  margin-top: 30px;
-  padding-left: 30px;
+  margin-top: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .right_content {
   display: flex;
   flex-direction: column;
   height: 250px;
-  margin-top: 15px;
+  margin-top: 24px;
   align-content: center;
   font-style: normal;
   font-weight: bold;
@@ -163,7 +160,7 @@ h5 {
   align-content: space-around;
 }
 
-h6 {
+p {
   display: flex;
   flex-direction: column;
   align-content: space-around;
@@ -172,6 +169,30 @@ h6 {
   font-size: 14px;
   line-height: 16.94px;
   color: #f3f3f3;
+}
+
+a:link {
+  color: #f3f3f3;
+}
+
+a:visited {
+  color: #f3f3f3;
+}
+
+a:hover {
+  color: white;
+}
+
+.hr {
+      text-decoration:none;
+}
+
+
+.link {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #f3f3f3;
+  text-decoration: underline;
 }
 
 .app {
@@ -205,6 +226,10 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #f3f3f3;
+  text-decoration: underline;
 }
 
 .tc {

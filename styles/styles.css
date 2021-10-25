@@ -16,6 +16,8 @@ body {
   background-size: cover;
   position: fixed;
   width: 100%;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 .logo {
@@ -56,6 +58,7 @@ body {
   color: #f3f3f3;
   width: 77px;
   left: 899px;
+  padding-right: 48px;
   top: 21px;
   border-radius: 4px;
   font-family: Titillium Web;
@@ -87,7 +90,7 @@ body {
   justify-items: center;
   align-content: center;
   flex-grow: 1;
-  height: 45vh;
+  height: fit-content;
   margin-top: 30px;
 }
 
@@ -257,7 +260,7 @@ h6 {
   .app {
     padding-right: 200px;
     height: 404px;
-    width: 560px;
+    width: 600px;
     left: 51px;
     top: 100px;
   }
@@ -365,6 +368,18 @@ h6 {
 /* ----------- iPhone X ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .navbar {
+    background: #151a21cc;
+    display: flex;
+    flex-flow: row wrap;
+    height: 88px;
+    top: 0;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+  }
+
   .footer {
     height: 148px;
     width: 100%;
@@ -460,6 +475,15 @@ h6 {
     width: 100%;
     overflow: hidden;
   }
+  .left_side {
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-content: center;
+    flex-grow: 1;
+    margin-top: 30px;
+    height: max-content;
+  }
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
@@ -483,6 +507,16 @@ h6 {
     top: 100px;
     margin-left: 150px;
   }
+
+  .left_side {
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-content: center;
+    flex-grow: 1;
+    margin-top: 30px;
+    height: max-content;
+  }
 }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
@@ -499,11 +533,33 @@ h6 {
     overflow: hidden;
   }
 
+  .left_side {
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-content: center;
+    flex-grow: 1;
+    margin-top: 30px;
+    height: max-content;
+  }
+
   .app {
     height: 404px;
     width: 416px;
     left: 51px;
     top: 100px;
     margin-left: 150px;
+  }
+}
+
+@media only screen and (min-device-width: 735px) and (max-device-width: 1250px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .left_side {
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-content: center;
+    flex-grow: 1;
+    margin-top: 30px;
+    height: max-content;
   }
 }

@@ -560,9 +560,9 @@ a:hover {
 
   }
 
-  .app, img {
-    width: fit-content;
-     height: 404px;
+  .app {
+  width: fit-content;
+  height: 404px;
   width: 416px;
   }
 

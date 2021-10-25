@@ -501,8 +501,12 @@ a:hover {
     width: 100vw;
   }
 
+
   .app {
-    width: fit-content;
+    height: 404px;
+    width: 390px;
+    left: 51px;
+    top: 100px;
   }
 
   #container {
@@ -556,14 +560,11 @@ a:hover {
 /* ----------- iPhone 12 Pro Max X ----------- */
 @media only screen and (min-width: 428px) and (max-width: 767px) {
 
-  #footer {
-
-  }
-
   .app {
-  width: fit-content;
-  height: 404px;
-  width: 416px;
+    height: 404px;
+    width: 390px;
+    left: 51px;
+    top: 100px;
   }
 
   .footer_left {

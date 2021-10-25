@@ -68,7 +68,7 @@ body {
 }
 
 #container {
-  background-image: url("../assets/oneshots_banner.png");
+  background-image: url("/assets/oneshots_banner.jpg");
   background-repeat: repeat-x;
   display: inline-flex;
   flex-flow: row wrap;

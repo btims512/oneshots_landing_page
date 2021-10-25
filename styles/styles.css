@@ -192,7 +192,6 @@ a:hover {
 
 .app {
   height: 404px;
-  width: 416px;
   left: 51px;
   top: 100px;
 }
@@ -560,7 +559,7 @@ a:hover {
   .app {
     width: 100vw;
   }
-  
+
   .footer_left {
     display: flex;
     width: 100vw;

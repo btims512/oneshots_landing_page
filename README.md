@@ -1,3 +1,3 @@
 # OneShots Landing Page
 
-![OneShots](/assets/social-share.jpg)
+![OneShots](assets/social-share.jpg)

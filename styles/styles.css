@@ -1,6 +1,7 @@
 body {
-  background-image: url("../assets/oneshots_banner.png");
-  background-repeat: repeat-x;
+  /* background-image: url("../assets/oneshots_banner.png");
+  
+  background-repeat: repeat-x; */
   position: absolute;
   /* overflow: visible; */
   background-color: #252e39;
@@ -52,7 +53,7 @@ body {
   font-family: "Titillium Web", sans-serif;
   font-weight: bold;
   height: 45px;
-  background-color: #f3f3f3;
+  color: #f3f3f3;
   width: 77px;
   left: 899px;
   top: 21px;
@@ -67,36 +68,37 @@ body {
 }
 
 #container {
-  display: flex;
+  background-image: url("../assets/oneshots_banner.png");
+  background-repeat: repeat-x;
+  display: inline-flex;
   flex-flow: row wrap;
   justify-self: center;
-  margin-top: 100px;
+  position: fixed;
+  margin-top: 88px;
+  width: fit-content;
+  width: 100%;
   height: 100vh;
-  width: auto;
-  min-height: 100vh;
-  margin-left: 50px;
-  /* background-color: rgb(227, 180, 180); */
+  overflow: scroll;
 }
 
 .left_side {
   display: flex;
   flex-flow: column wrap;
-  justify-items: flex-start;
-  align-content: flex-start;
+  justify-items: center;
+  align-content: center;
   flex-grow: 1;
-  height: 30vh;
+  height: 45vh;
   margin-top: 30px;
 }
 
 .right_side {
   display: flex;
   flex-flow: column wrap;
-  /* justify-items: center; */
-  /* align-content: center; */
-  width: 5em;
+  justify-items: center;
   flex-grow: 1;
-  height: 30vh;
+  height: 90vh;
   margin-top: 30px;
+  padding-left: 30px;
 }
 
 .right_content {
@@ -105,15 +107,12 @@ body {
   height: 250px;
   margin-top: 15px;
   align-content: center;
-  font-family: Inter;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
   width: 416px;
-  height: 404px;
-  left: 205px;
-  top: 124px;
+  height: 60vh;
 }
 
 h2 {
@@ -132,12 +131,11 @@ h2 {
 }
 
 h4 {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Inter", sans-serif;
   width: 428px;
   height: 40px;
   left: 532px;
   top: 183px;
-  font-family: Inter;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -166,19 +164,19 @@ h6 {
   display: flex;
   flex-direction: column;
   align-content: space-around;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 16.94px;
   color: #f3f3f3;
 }
 
 .app {
-  /* position: absolute; */
   height: 404px;
   width: 416px;
   left: 51px;
   top: 100px;
+  /* margin-left: 200px; */
 }
 
 .footer {
@@ -191,7 +189,6 @@ h6 {
   bottom: 0;
   height: 148px;
   width: 100%;
-  overflow: hidden;
 }
 
 .footer_left {
@@ -216,40 +213,86 @@ h6 {
   text-align: right;
 }
 
+/* Media Queries  */
+
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  .footer {
-    height: 148px;
-    width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
-
-/* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   #container {
-    display: flex;
+    background-image: url("../assets/oneshots_banner.png");
+    background-repeat: repeat-x;
+    display: inline-flex;
     flex-flow: row wrap;
     justify-self: center;
+    position: fixed;
+    margin-top: 88px;
+    width: 100vw;
     height: 100vh;
-    padding-left: 20vw;
-    min-height: 100vh;
-    /* margin-left: 50px; */
-    /* background-color: rgb(227, 180, 180); */
+    overflow: scroll;
   }
-}
 
-/* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .right_side {
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    flex-grow: 1;
+    height: 125vh;
+    margin-top: 30px;
+    padding-left: 30px;
+  }
+
+  .left_side {
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 1;
+    height: 65vh;
+    margin-top: 30px;
+    margin-bottom: -30px;
+  }
+
+  .app {
+    padding-right: 200px;
+    height: 404px;
+    width: 560px;
+    left: 51px;
+    top: 100px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 320px;
+  }
+
+  .footer_left {
+    display: flex;
+    width: 150px;
+    flex-flow: row wrap;
+  }
+  .footer_right {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100px;
+    align-items: flex-end;
+  }
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 375px;
+  }
 }
 
 /* Portrait */
@@ -259,37 +302,107 @@ h6 {
 /* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 }
+/* ----------- Google Pixel 2 ----------- */
+@media only screen and (min-width: 411px) and (max-width: 731px) {
+  .right_side {
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    flex-grow: 1;
+    height: 105vh;
+    margin-top: 30px;
+    padding-left: 30px;
+  }
+
+  .left_side {
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 1;
+    height: 65vh;
+    margin-top: 30px;
+    margin-bottom: -80px;
+  }
+
+  .footer {
+    background-image: url(../assets/oneshots-footer-banner.png);
+    background-repeat: repeat-x;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    height: 148px;
+    width: 100%;
+  }
+}
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  .footer {
+    position: fixed;
+    bottom: 0;
+    height: 50vh;
+    width: 100%;
+  }
 }
 
 /* Portrait */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .footer {
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+  }
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  .right_side,
-  .left_side,
-  #container {
-    display: flex;
-    flex-flow: column wrap;
-    flex-grow: 1;
-    height: 800px;
-    margin-top: 50px;
-  }
 }
 
 /* ----------- iPhone X ----------- */
-
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   .footer {
     height: 148px;
     width: 100%;
+  }
+
+  .right_side {
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    flex-grow: 1;
+    height: 95vh;
+  }
+
+  .left_side {
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 1;
+    height: 65vh;
+    margin-top: 30px;
+    margin-bottom: -150px;
+  }
+
+  .footer_right {
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: center; */
+    width: 100px;
+    align-items: flex-end;
+  }
+
+  .tc {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+  }
+
+  .app {
+    height: 404px;
   }
 }
 
@@ -299,6 +412,38 @@ h6 {
 
 /* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .right_side {
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    flex-grow: 1;
+    height: 200px;
+    width: 100vw;
+  }
+  .right_content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    align-content: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    width: 416px;
+    height: 90vh;
+  }
+  .footer {
+    background-image: url(../assets/oneshots-footer-banner.png);
+    background-repeat: repeat-x;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    overflow: hidden;
+    bottom: 0;
+    height: 90px;
+    width: 100%;
+  }
 }
 
 @media (min-width: 961px) {
@@ -315,17 +460,6 @@ h6 {
     width: 100%;
     overflow: hidden;
   }
-  #container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-self: center;
-    margin-top: 100px;
-    height: 100vh;
-    padding-left: 20vw;
-    min-height: 100vh;
-    margin-left: 50px;
-    /* background-color: rgb(227, 180, 180); */
-  }
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
@@ -340,18 +474,14 @@ h6 {
     bottom: 0;
     height: 148px;
     width: 100%;
-    overflow: hidden;
   }
-  #container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-self: center;
-    margin-top: 200px;
-    height: 100vh;
-    padding-left: 20vw;
-    min-height: 100vh;
-    margin-left: 50px;
-    /* background-color: rgb(227, 180, 180); */
+
+  .app {
+    height: 404px;
+    width: 416px;
+    left: 51px;
+    top: 100px;
+    margin-left: 150px;
   }
 }
 @media (min-width: 1281px) {
@@ -363,21 +493,17 @@ h6 {
     display: flex;
     justify-content: space-around;
     position: fixed;
-    overflow: hidden;
     bottom: 0;
     height: 148px;
     width: 100%;
     overflow: hidden;
   }
-  #container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-self: center;
-    margin-top: 200px;
-    height: 100vh;
-    padding-left: 30vw;
-    min-height: 100vh;
-    margin-left: 50px;
-    /* background-color: rgb(227, 180, 180); */
+
+  .app {
+    height: 404px;
+    width: 416px;
+    left: 51px;
+    top: 100px;
+    margin-left: 150px;
   }
 }

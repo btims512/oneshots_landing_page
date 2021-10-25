@@ -503,10 +503,7 @@ a:hover {
 
 
   .app {
-    height: 404px;
-    width: 390px;
-    left: 51px;
-    top: 100px;
+    width: 100vw;
   }
 
   #container {
@@ -561,12 +558,9 @@ a:hover {
 @media only screen and (min-width: 428px) and (max-width: 767px) {
 
   .app {
-    height: 404px;
-    width: 390px;
-    left: 51px;
-    top: 100px;
+    width: 100vw;
   }
-
+  
   .footer_left {
     display: flex;
     width: 100vw;

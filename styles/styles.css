@@ -81,7 +81,7 @@ body {
   justify-items: center;
   align-content: center;
   flex-grow: 1;
-  height: fit-content;
+  /* height: fit-content; */
   margin-top: 30px;
 }
 
@@ -192,7 +192,7 @@ a:hover {
 
 .app {
   height: 404px;
-  width: 80%;
+  width: 416px;
   left: 51px;
   top: 100px;
 }
@@ -205,6 +205,7 @@ a:hover {
   justify-content: space-around;
   position: fixed;
   bottom: 0;
+  padding-top: 20px;
   height: 144px;
   width: 100%;
 }
@@ -357,7 +358,7 @@ a:hover {
   }
 
   .app {
-    width: fit-content;
+    /* width: fit-content; */
   }
 
   .right_content {
@@ -498,7 +499,7 @@ a:hover {
 
 
   .app {
-    width: 100vw;
+    /* width: 100vw; */
   }
 
   #container {
@@ -553,7 +554,7 @@ a:hover {
 @media only screen and (min-width: 428px) and (max-width: 767px) {
 
   .app {
-    width: 100vw;
+    /* width: 100vw; */
   }
 
   .footer_left {
@@ -618,13 +619,13 @@ a:hover {
     width: 100%;
   }
 
-  .app {
+  /* .app {
     height: 404px;
     width: 416px;
     left: 51px;
     top: 100px;
     margin-left: 150px;
-  }
+  } */
 
   .left_side {
     display: flex;
@@ -661,13 +662,13 @@ a:hover {
     height: max-content;
   }
 
-  .app {
+  /* .app {
     height: 404px;
     width: 416px;
     left: 51px;
     top: 100px;
     margin-left: 150px;
-  }
+  } */
 }
 
 @media only screen and (min-device-width: 735px) and (max-device-width: 1250px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {

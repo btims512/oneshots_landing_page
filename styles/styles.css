@@ -1,5 +1,6 @@
 body {
-  position: absolute;
+  margin: 0;
+  /* position: absolute; */
   overflow-y: auto;
   background-color: #252e39;
 }
@@ -92,7 +93,7 @@ body {
   flex-grow: 1;
   height: 90vh;
   margin-top: 32px;
-  padding-left: 32px;
+  padding-left: 8px;
   padding-right: 32px;
 }
 
@@ -107,10 +108,11 @@ body {
   font-size: 16px;
   line-height: 20px;
   width: 464px;
-  height: 60vh;
+  height: 80vh;
 }
 
 h2 {
+  
   height: 55px;
   width: 457px;
   left: 736px;
@@ -203,10 +205,15 @@ a:hover {
   background-size: cover;
   display: flex;
   justify-content: space-around;
-  position: fixed;
+  position: absolute;
+  right: 0;
   bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
   padding-top: 20px;
-  height: 144px;
+  height: 110px;
   width: 100%;
 }
 
@@ -234,8 +241,12 @@ a:hover {
   font-style: normal;
   font-weight: 500;
   height: fit-content;
-  text-align: right;
+  /* text-align: right; */
 }
+
+.footer_icons {
+
+
 
 /* ---------------------- Media Queries -------------------------------  */
 
@@ -248,15 +259,9 @@ a:hover {
 @media screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
  
   .navbar {
-    background: #151a21cc;
-    display: flex;
-    flex-flow: row wrap;
-    height: 88px;
-    top: 0;
-    background-size: cover;
-    position: fixed;
     width: 100%;
-    padding: 20px;
+    height: 24px;
+    padding-right: 20px;
   }
 
   .right_side {
@@ -264,26 +269,15 @@ a:hover {
     flex-wrap: wrap;
     flex-direction: column;
     flex-flow: column wrap;
-    width: 100%;
+    width: 100vw;
     flex-grow: 1;
-    height: 110vh;
+    height: 300px;
     margin-left: -23px;
     max-width: max-content;
   }
 
   .right_content {
     max-width: 100%;
-  }
-
-
-  .right_side {
-    display: flex;
-    flex-flow: column wrap;
-    justify-items: center;
-    flex-grow: 1;
-    height: 125vh;
-    margin-top: 30px;
-    padding-left: 30px;
   }
   
 
@@ -307,17 +301,53 @@ a:hover {
   #footer {
     display: flex;
     flex-direction: row;
-    height: 100px;
-    width: 320px;
+    height: 88px;
+    width: 100vw;
   }
 
   .footer_left {
     padding-left: 15px;
   }
-  .footer_right {
-    height: 20vh;
-    align-items: center;
-    
+
+  .footer_icons {
+    display: flex;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    width: 10px;
+    height: 20px;
+  }
+
+  .nav-button {
+  }
+
+  u {
+    font-size: 10px;
+  }
+}
+
+/* Galaxy S5 */
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  .app {
+    height: 404px;
+    width: 118vw;
+    left: 51px;
+    top: 100px;
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: row;
+    height: 88px;
+    width: 100vw;
+  }
+
+  .footer_left {
+    padding-left: 15px;
+  }
+ 
+  u {
+    font-size: 10px;
   }
 }
 
@@ -352,20 +382,18 @@ a:hover {
     flex-flow: column wrap;
     width: 100%;
     flex-grow: 1;
-    height: 110vh;
+    height: 100px;
     margin-left: -23px;
     max-width: max-content;
   }
 
-  .app {
-    /* width: fit-content; */
-  }
+#container {
+  overflow: scroll;
+}
 
-  .right_content {
-    max-width: 100%;
-
-  }
-  
+.body-button{
+  height: 100px;
+}
   #footer {
     height: 15vh;
     width: 100vw;
@@ -380,10 +408,16 @@ a:hover {
 
   .footer_right {
     display: flex;
-    flex-flow: row wrap;
-    padding-bottom: 70px;
     padding-right: 5px;
     width: 100vw;
+  }
+
+  .footer_icons {
+    display: flex;
+    padding-top: -20px;
+    padding-right: 100px;
+    width: 10px;
+    height: 20px;
   }
 }
 
@@ -448,14 +482,10 @@ a:hover {
 
   .footer_right {
     display: flex;
-    flex-flow: row wrap;
-    padding-bottom: 32px;
     padding-right: 5px;
+    margin-top: 50px;
     width: 100vw;
-    align-items: flex-end;
   }
-
-
 }
 
 /* Portrait */
@@ -521,7 +551,12 @@ a:hover {
   }
 
   #footer {
-    width: 100%;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+    padding-top: 10px;
+    height: 127px;
+    
   }
 
   .footer_left {
@@ -538,16 +573,26 @@ a:hover {
 
   .footer-text {
     display: flex;
+    align-items: center;
     flex-flow: column wrap;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 500;
+
   }
 
 }
 
 /* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  #footer {
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+    padding-top: 20px;
+    height: 90px;
+    
+  }
   
 
 /* ----------- iPhone 12 Pro Max X ----------- */
@@ -657,7 +702,7 @@ a:hover {
     flex-flow: column wrap;
     justify-items: center;
     align-content: center;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     margin-top: 30px;
     height: max-content;
   }

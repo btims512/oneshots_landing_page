@@ -294,8 +294,6 @@ footer {
     width: 50%;
     min-width: 328px;
     margin-top: 32px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
   .footer {
     display: flex;
